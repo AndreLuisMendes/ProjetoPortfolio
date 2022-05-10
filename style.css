@@ -1,0 +1,273 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+ul{
+    list-style:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+body {
+    background-color: black;
+    background-image: url(fundo.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: 'Dancing Script', cursive; /* https://fonts.google.com/ */
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 4px 3px 1px #ffffff; /*Border */
+    border-bottom: 4px hidden #ffffff;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+header ul li {
+  padding: 5px;
+  border-right: 2px groove #fff;
+}
+
+    header ul li a {
+      transition: 300ms;
+    
+    }
+        header ul li a:hover {
+            color: #a1c136;
+            padding: 5px;
+        }
+
+
+
+header ul li:first-child {
+        border-left: 2px groove #fff;
+}
+
+
+
+    header img {
+        margin-left: -500px;
+    }
+
+.container #about {
+    margin: auto;
+    text-align: justify;
+    width: 40%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#arrow{
+    font-size: 35px;
+    cursor:pointer;
+    animation: piscar 1s steps(5, start) infinite;
+
+}
+
+#animation {
+   transition: 300ms;
+}
+
+@keyframes piscar {
+    to {
+    
+      visibility: hidden; /* Colocar animation invisivel*/
+    }
+  
+}
+
+.rotate {
+   transform: rotate(180deg);
+   transition: 300ms;
+
+}
+
+.active {
+  display: block !important;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.container .name {
+    font-size: 30px;
+    text-align: center; 
+}
+
+
+.container .name  h1{
+   padding: 15px;
+}
+
+
+.container .form {
+    width: 50%;
+    margin:auto;
+   /* border: thick double #fff;  // borda dupla
+    padding: 5px;*/
+
+}
+    .container .form input {
+        width: 50%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .container .form button {
+        width: 15%;
+        padding: 5px 10px;
+        background: linear-gradient(to right, #3a3d40 50%, #abcb3d 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        color: azure;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: all 400ms ease-out;
+        border-radius: 0px 5px 5px 0px;
+        margin-left: -5px;
+        margin-top: 15px;
+        font-size:small;
+    }
+
+.container .form button:hover {
+   background-position: left bottom;
+
+}
+
+
+.slide-top {
+    -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(+400px);
+        transform: translateX(+400px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(+400px);
+        transform: translateX(+400px);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .container .name {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header img {
+        width: 70%;
+        margin-left: -50px;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .form {
+        width: 100%;
+        margin: auto;
+        /* border: thick double #fff;  // borda dupla
+    padding: 5px;*/
+    }
+
+        .container #about {
+            margin: auto;
+            text-align: justify;
+            width: 100%;
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .container .form button {
+            width: 15%;
+            padding: 5px 5px;
+        }
+
+    .slide-top {
+        -webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+    @-webkit-keyframes slide-top {
+        0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(+40px);
+            transform: translateX(+40px);
+        }
+    }
+
+    @keyframes slide-top {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        100% {
+            -webkit-transform: translateX(+40px);
+            transform: translateX(+40px);
+        }
+    }
+} 
+
+
+
+

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="bt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/029289f5c7.js" crossorigin="anonymous"></script>
+    <title>Game Academy</title>
+</head>
+<body>
+    <!--https://www.pexels.com/pt-br-->
+    <header>
+        <div >
+            <img class="slide-top" src="logo.png" alt="" srcset="">
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/AndreLuisMendes">Github</a></li>
+            <li><a target="_blank" href="mailto:andre-tga@hotmail.com">E-Mail</a></li>
+            <li><a target="_blank" href="https://wa.me/6599815690">Celular</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Andre Mendes</h1>
+                <h5> Developer ERP</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <!--https://fontawesome.com/-->
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões
+                    novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+                </p>
+            </div>
+            <div class="form">
+                <div><p>Deixe que contato</p></div>
+                <form action="">
+                    <input type="text" placeholder="Informe Seu E-Mail" />
+                    <button>Enviar</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <!--https://animista.net/  Site com Animaçoes prontas-->
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var arrow = document.getElementById('about');
+            arrow.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
